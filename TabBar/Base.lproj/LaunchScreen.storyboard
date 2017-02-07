@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="olt-aG-14l">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="启动中" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cS8-dN-B0O">
+                                        <rect key="frame" x="279" y="342" width="42" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <color key="textColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="cS8-dN-B0O" firstAttribute="centerX" secondItem="olt-aG-14l" secondAttribute="centerX" id="SpW-f1-q3q"/>
+                                    <constraint firstItem="cS8-dN-B0O" firstAttribute="centerY" secondItem="olt-aG-14l" secondAttribute="centerY" constant="50" id="gSB-lW-fms"/>
+                                </constraints>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="KvM-CP-E1z">
+                                <rect key="frame" x="282" y="281" width="37" height="37"/>
+                                <color key="color" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KvM-CP-E1z" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="2dt-3I-IS6"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="olt-aG-14l" secondAttribute="bottom" id="DcL-hv-5GJ"/>
+                            <constraint firstItem="olt-aG-14l" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="KFW-5g-iDz"/>
+                            <constraint firstItem="KvM-CP-E1z" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="TcJ-li-CXL"/>
+                            <constraint firstAttribute="trailing" secondItem="olt-aG-14l" secondAttribute="trailing" id="X4F-wB-yVe"/>
+                            <constraint firstItem="olt-aG-14l" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="XBS-8K-Xs9"/>
+                            <constraint firstItem="olt-aG-14l" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="nBu-9M-rHd"/>
+                            <constraint firstItem="olt-aG-14l" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="udR-xs-tlT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+</document>
